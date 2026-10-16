@@ -30,77 +30,30 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The global enterprise key management and cryptographic security market is valued at approximately **$3.0 billion to $3.5 billion**, projected to exceed **$9.5 billion by 2030** at a compound annual growth rate (CAGR) of ~20%. The sector is **moderately concentrated at the enterprise top**—dominated by long-standing security titans (Thales, CyberArk, IBM/HashiCorp, and DigiCert)—yet **structurally fragmented across multi-cloud key orchestration, certificate lifecycle niches, and post-quantum cryptography (PQC) readiness layers**.
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[Thales CipherTrust](https://cpl.thalesgroup.com/)**  
-
-  **Enterprise key management and data protection platform** . Features **centralized key lifecycle**, **HSM integration**, **database encryption**, and **multi-cloud key orchestration**. **The enterprise standard** for regulated industries requiring FIPS 140-2 Level 3 validated HSMs.
-
-
-
-- **[HashiCorp Vault (HCP)](https://www.hashicorp.com/products/vault)**  
-
-  **Managed secrets management and PKI platform** . Features **dynamic secrets**, **transit engine for encryption-as-a-service**, **PKI secrets engine for internal CA**, and **ACME support** . **The most widely deployed secrets management platform**.
-
-
-
-- **[CyberArk](https://www.cyberark.com/)**  
-
-  **Privileged access management and secrets management** . Features **Conjur for machine identity**, **credential rotation**, and **centralized policy enforcement** . **The enterprise standard** for privileged access security.
-
-
-
-- **[DigiCert](https://www.digicert.com/)**  
-
-  **Certificate lifecycle management** with **strong PQC research track record** and **deep CA integration** . **DigiCert Trust Lifecycle Manager** provides discovery, automation, and governance. **The natural choice** for organizations using DigiCert as their primary CA.
-
-
-
-- **[Keyfactor](https://www.keyfactor.com/)**  
-
-  **The pragmatic enterprise CLM choice** — **Keyfactor Command** for certificate lifecycle management plus **EJBCA** for integrated PKI from one vendor . **Leads in PQC readiness** following 2025 acquisitions of InfoSec Global and CipherInsights . **EJBCA supports ML-DSA, ML-KEM, SLH-DSA, Falcon, LMS, and XMSS** with Common Criteria EAL4+ certification .
-
-
-
-- **[Venafi (CyberArk)](https://www.venafi.com/)**  
-
-  **Enterprise machine identity management** with the deepest Windows/Active Directory ecosystem support and proven scalability to 100K+ certificates . **TLS Protect** for certificate lifecycle management, **SSH Protect** for SSH key management. **The premium choice** for highly regulated enterprises.
-
-
-
-- **[AppViewX](https://www.appviewx.com/)**  
-
-  **PKI and certificate lifecycle management with strong PQC readiness** . **AVX ONE** discovers public and private trust certificates, automates provisioning and renewal, and enforces enterprise PKI policy . **PQC Assessment Tool** produces a Cryptographic Bill of Materials and a readiness score .
-
-
-
-- **[Entrust](https://www.entrust.com/)**  
-
-  **Enterprise certificate management** with **HSM integration** and comprehensive PKI services.
-
-
-
-- **[Sectigo](https://www.sectigo.com/)**  
-
-  **Enterprise certificate lifecycle management** with automated discovery, expiration monitoring, and certificate operations.
-
-
-
-- **[RSA Security](https://www.rsa.com/)**  
-
-  **Identity and access management** with **RSA SecurID** for MFA and **RSA Archer** for governance, risk, and compliance.
+| Platform | Valuation / Company Size | Pricing | Free Tier / Trial Limits | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Thales CipherTrust](https://cpl.thalesgroup.com/)** | ~$48B–$50B Market Cap (Thales Group) / €18.4B+ Rev | From €165/mo (CTE Cloud) up to €3,310/mo (CDSPaaS / Cloud Key Mgmt) | Free-forever Community Edition (equiv. k170v virtual appliance, up to 4 CPUs, bundled with up to 3 CTE-K8s / DPG licenses); 30-day cloud / 90-day virtual appliance trials | **Enterprise key management and data protection platform**. Features centralized key lifecycle, HSM integration, database encryption, and multi-cloud key orchestration. The enterprise standard for regulated industries requiring FIPS 140-2 Level 3 validated HSMs. |
+| **[HashiCorp Vault (HCP)](https://www.hashicorp.com/products/vault)** | $35B+ (IBM Cloud Software) / $6.4B HashiCorp Acquisition | From ~$0.03/hr (~$22/mo) for Dev tier; Essentials from $1.58/hr + $72.92/client/mo | $500 free trial platform credits (valid up to 6 months for 1 cluster); Development tier supports free sandbox deployment capped at max 25 active clients/mo | **Managed secrets management and PKI platform**. Features dynamic secrets, transit engine for encryption-as-a-service, PKI secrets engine for internal CA, and ACME support. The most widely deployed secrets management platform. |
+| **[CyberArk](https://www.cyberark.com/)** | ~$20.6B Valuation / $1.36B Annual Revenue | From ~$1,800 to $2,400/privileged user/yr (Standard tier, min commit) | No public self-service free tier; 30-day guided evaluation / test sandbox provided via enterprise sales engagement (open-source Conjur OSS available for self-hosting) | **Privileged access management and secrets management**. Features Conjur for machine identity, credential rotation, and centralized policy enforcement. The enterprise standard for privileged access security. |
+| **[DigiCert](https://www.digicert.com/)** | ~$8.0B Valuation (Clearlake / TA Associates) / ~$1B+ Rev | From $399/yr (Secure Site OV); Trust Lifecycle Manager baseline starts at ~$7,500–$8,000/yr (per seat/domain tier) | 30-day free trial for TLS/SSL certificates; interactive self-guided sandbox in DigiCert Demo Center (enterprise PoC upon request) | **Certificate lifecycle management** with strong PQC research track record and deep CA integration. DigiCert Trust Lifecycle Manager provides discovery, automation, and governance. The natural choice for organizations using DigiCert as their primary CA. |
+| **[RSA Security](https://www.rsa.com/)** | ~$2.1B Acquisition Valuation (STG) / ~$460M+ Rev | From $3.00 to $5.50/user/mo ($36–$66/user/yr for RSA ID Plus E1/E2 tiers) | 45-day free trial of RSA ID Plus (cloud MFA, single sign-on, and passwordless authentication testbed) | **Identity and access management** with RSA SecurID for MFA and RSA Archer for governance, risk, and compliance. |
+| **[Venafi (CyberArk)](https://www.venafi.com/)** | $1.54B Acquisition Valuation (CyberArk) / ~$150M+ ARR | From ~$12,500/yr (TLS Protect Cloud base packs, scaling per managed machine identity) | 30-day free trial of TLS Protect Cloud (full certificate discovery, automated ACME renewal testing, and cloud inventory) | **Enterprise machine identity management** with the deepest Windows/Active Directory ecosystem support and proven scalability to 100K+ certificates. TLS Protect for certificate lifecycle management, SSH Protect for SSH key management. |
+| **[Keyfactor](https://www.keyfactor.com/)** | ~$1.3B Valuation / $200M+ ARR | From ~$12,000/yr (Keyfactor Command base tier); commercial EJBCA SaaS from ~$1.50/hr on cloud marketplaces | 30-day free trial via AWS / Azure Marketplace test drives; open-source EJBCA Community Edition free forever | **The pragmatic enterprise CLM choice** — Keyfactor Command for certificate lifecycle management plus EJBCA for integrated PKI from one vendor. Leads in PQC readiness following 2025 acquisitions of InfoSec Global and CipherInsights. EJBCA supports ML-DSA, ML-KEM, SLH-DSA, Falcon, LMS, and XMSS with Common Criteria EAL4+ certification. |
+| **[Sectigo](https://www.sectigo.com/)** | $900M Acquisition Valuation (GI Partners) / ~$90M+ Rev | From $99/yr per managed certificate bundle; SCM Pro automated tiers start from ~$400/yr (per domain tier) | 30-day free trial for Sectigo Certificate Manager (SCM Pro) including automated certificate discovery, ACME testing, and private CA setup | **Enterprise certificate lifecycle management** with automated discovery, expiration monitoring, and certificate operations. |
+| **[Entrust](https://www.entrust.com/)** | ~$916M Annual Revenue / Private ($1.1B+ Assets) | From £7,250/yr (~$9,200/yr) for PKIaaS entry bundle (Online Root + Issuing CA + APIs) | 60-day evaluation trial for Certificate Services and hosted PKIaaS sandbox environments | **Enterprise certificate management** with HSM integration and comprehensive PKI services. |
+| **[AppViewX](https://www.appviewx.com/)** | ~$100M+ Valuation / ~$30M–$50M Rev ($55M+ Raised) | From ~$5,000 to $10,000/yr (AVX ONE baseline SaaS tier for certificate discovery & automation) | 30-day free trial of AVX ONE (with extensions up to 90 days upon request, includes PQC readiness score and CBOM assessment) | **PKI and certificate lifecycle management with strong PQC readiness**. AVX ONE discovers public and private trust certificates, automates provisioning and renewal, and enforces enterprise PKI policy. PQC Assessment Tool produces a Cryptographic Bill of Materials and a readiness score. |
 
 
 
