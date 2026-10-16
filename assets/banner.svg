@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0d1527" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="cyberGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.7" opacity="0.6" />
+      <circle cx="40" cy="40" r="1" fill="#38bdf8" opacity="0.3" />
+    </pattern>
+
+    <!-- Styles for animations and fonts -->
+    <style>
+      @keyframes floatParticle1 {
+        0% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
+        50% { transform: translateY(-25px) translateX(15px); opacity: 0.8; }
+        100% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
+      }
+      @keyframes floatParticle2 {
+        0% { transform: translateY(0px) translateX(0px); opacity: 0.2; }
+        50% { transform: translateY(20px) translateX(-20px); opacity: 0.7; }
+        100% { transform: translateY(0px) translateX(0px); opacity: 0.2; }
+      }
+      @keyframes rotateRing {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.25; transform: scale(1); }
+        50% { opacity: 0.55; transform: scale(1.08); }
+      }
+      @keyframes dashStream {
+        to { stroke-dashoffset: -100; }
+      }
+
+      .p-anim-1 { animation: floatParticle1 7s ease-in-out infinite; }
+      .p-anim-2 { animation: floatParticle2 9s ease-in-out infinite; }
+      .rotate-clock { transform-origin: 1040px 180px; animation: rotateRing 25s linear infinite; }
+      .rotate-counter { transform-origin: 1040px 180px; animation: rotateRing 18s linear infinite reverse; }
+      .pulse-core { transform-origin: 1040px 180px; animation: pulseGlow 4s ease-in-out infinite; }
+      .stream-line { stroke-dasharray: 8 6; animation: dashStream 3s linear infinite; }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" fill="url(#bgGrad)" />
+  <rect width="1200" height="360" fill="url(#cyberGrid)" />
+
+  <!-- Dynamic Ambient Glows (Underlay) -->
+  <circle cx="1040" cy="180" r="140" fill="url(#glowGrad)" class="pulse-core" />
+  <circle cx="160" cy="180" r="180" fill="#38bdf8" opacity="0.06" filter="blur(40px)" />
+  <circle cx="600" cy="80" r="160" fill="#818cf8" opacity="0.08" filter="blur(50px)" />
+
+  <!-- Subtle Dynamic Ambient Stream Lines in background -->
+  <path d="M 0 100 Q 300 160 600 100 T 1200 120" fill="none" stroke="#38bdf8" stroke-width="1.2" opacity="0.2" class="stream-line" />
+  <path d="M 0 260 Q 400 200 800 280 T 1200 240" fill="none" stroke="#818cf8" stroke-width="1.2" opacity="0.15" class="stream-line" />
+
+  <!-- Floating Ambient Particles (Safe positions, low z-index) -->
+  <g class="p-anim-1">
+    <circle cx="80" cy="80" r="3" fill="#38bdf8" />
+    <circle cx="340" cy="50" r="2.5" fill="#818cf8" />
+    <circle cx="580" cy="310" r="3.5" fill="#c084fc" />
+    <circle cx="780" cy="70" r="2" fill="#38bdf8" />
+  </g>
+  <g class="p-anim-2">
+    <circle cx="120" cy="300" r="2" fill="#818cf8" />
+    <circle cx="480" cy="330" r="3" fill="#38bdf8" />
+    <circle cx="860" cy="300" r="2.5" fill="#c084fc" />
+  </g>
+
+  <!-- Right Side Interactive Cryptographic / Quantum Shield Emblem -->
+  <g id="cryptoShieldVisual">
+    <!-- Outer Quantum Ring with hash marks -->
+    <circle cx="1040" cy="180" r="110" fill="none" stroke="#334155" stroke-width="1.5" stroke-dasharray="4 8" class="rotate-clock" />
+    <circle cx="1040" cy="180" r="95" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="16 12" opacity="0.6" class="rotate-counter" />
+    <circle cx="1040" cy="180" r="80" fill="none" stroke="#818cf8" stroke-width="1.5" opacity="0.4" />
+
+    <!-- Shield Geometry Base -->
+    <path d="M 1040 105 L 1100 135 V 190 C 1100 235 1040 265 1040 265 C 1040 265 980 235 980 190 V 135 Z" 
+          fill="#0f172a" stroke="url(#primaryGrad)" stroke-width="3" />
+
+    <!-- Lock Keyhole / Quantum Core inside Shield -->
+    <rect x="1025" y="155" width="30" height="26" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="2" />
+    <path d="M 1032 155 V 147 C 1032 142.5 1035.5 139 1040 139 C 1044.5 139 1048 142.5 1048 147 V 155" 
+          fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" />
+    <circle cx="1040" cy="166" r="3" fill="#38bdf8" />
+    <path d="M 1040 169 V 175" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" />
+
+    <!-- Circuit lines extending from shield -->
+    <line x1="980" y1="180" x2="940" y2="180" stroke="#38bdf8" stroke-width="2" opacity="0.6" />
+    <circle cx="940" cy="180" r="3.5" fill="#38bdf8" />
+    
+    <line x1="1100" y1="180" x2="1140" y2="180" stroke="#818cf8" stroke-width="2" opacity="0.6" />
+    <circle cx="1140" cy="180" r="3.5" fill="#818cf8" />
+  </g>
+
+  <!-- FOREGROUND CONTENT: High clarity, zero obscuration -->
+  <g transform="translate(70, 0)">
+    <!-- Category Pill / Badge -->
+    <g transform="translate(0, 68)">
+      <rect width="320" height="30" rx="15" fill="#1e293b" stroke="#334155" stroke-width="1.2" />
+      <circle cx="16" cy="15" r="4.5" fill="#10b981" />
+      <text x="30" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#94a3b8" letter-spacing="1.5">ENTERPRISE SECURITY &amp; CRYPTO</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="152" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff" letter-spacing="-0.5">
+      Awesome Cryptography &amp; <tspan fill="url(#primaryGrad)">Encryption</tspan>
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="196" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="500" fill="#94a3b8" letter-spacing="0.2">
+      Curated Landscape of Key Management, PKI, Post-Quantum Readiness &amp; Secrets Orchestration
+    </text>
+
+    <!-- Feature Pillars / Badges in Foreground -->
+    <g transform="translate(0, 235)">
+      <!-- Pill 1 -->
+      <g>
+        <rect width="180" height="36" rx="8" fill="#111827" stroke="#1f2937" stroke-width="1.2" />
+        <text x="14" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#38bdf8">⚡ Post-Quantum Ready</text>
+      </g>
+      <!-- Pill 2 -->
+      <g transform="translate(195, 0)">
+        <rect width="165" height="36" rx="8" fill="#111827" stroke="#1f2937" stroke-width="1.2" />
+        <text x="14" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#818cf8">🔐 Key &amp; Secrets Mgmt</text>
+      </g>
+      <!-- Pill 3 -->
+      <g transform="translate(375, 0)">
+        <rect width="175" height="36" rx="8" fill="#111827" stroke="#1f2937" stroke-width="1.2" />
+        <text x="14" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#c084fc">🛡️ Certificate Lifecycle</text>
+      </g>
+      <!-- Pill 4 -->
+      <g transform="translate(565, 0)">
+        <rect width="175" height="36" rx="8" fill="#111827" stroke="#1f2937" stroke-width="1.2" />
+        <text x="14" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#34d399">🌐 SaaS &amp; Open-Source</text>
+      </g>
+    </g>
+  </g>
+</svg>
