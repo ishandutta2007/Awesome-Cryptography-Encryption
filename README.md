@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Cryptography-Encryption/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cryptography-Encryption?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cryptography-Encryption/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cryptography-Encryption?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Cryptography-Encryption/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Cryptography-Encryption?style=social" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Cryptography-Encryption/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -71,9 +71,9 @@ Enterprises requiring commercial SLAs, high-assurance FIPS 140-2/3 Level 3 compl
 
 Open-source cryptographic libraries and certificate management software provide transparent, vendor-independent primitives for self-hosted infrastructure, air-gapped environments, and quantum-resistant development.
 
-*The table below ranks open-source tools by their GitHub star counts in descending order:*
+*The table below ranks open-source tools by their GitHub Stars_Counts in descending order:*
 
-| 📦 Repository & Project | ⭐ GitHub Stars | ⚖️ License | 🎯 Primary Domain | 💡 Key Highlights & PQC Readiness |
+| 📦 Repository & Project | ⭐ GitHub_Stars | ⚖️ License | 🎯 Primary Domain | 💡 Key Highlights & PQC Readiness |
 | :--- | :---: | :--- | :--- | :--- |
 | **[HashiCorp Vault](https://github.com/hashicorp/vault)** | [![Stars](https://img.shields.io/github/stars/hashicorp/vault?style=social&color=white)](https://github.com/hashicorp/vault/stargazers) | BSL 1.1 | Secrets & Key Orchestration | Dynamic secrets, transit encryption-as-a-service, PKI secrets engine, and ACME support across multi-cloud environments. |
 | **[Certbot](https://github.com/certbot/certbot)** | [![Stars](https://img.shields.io/github/stars/certbot/certbot?style=social&color=white)](https://github.com/certbot/certbot/stargazers) | Apache-2.0 | ACME TLS Automation | EFF's official client to automatically deploy and renew Let's Encrypt certificates across web servers and proxies worldwide. |
@@ -138,7 +138,7 @@ We welcome contributions from cryptography engineers, security researchers, and 
 2. 🌿 **Create a feature branch**: `git checkout -b feature/new-crypto-tool`.
 3. ✏️ **Add or refine an entry** in [README.md](file:///C:/Users/ishan/Documents/Projects/Awesome-Cryptography-Encryption/README.md).
    * For SaaS products: Include specific pricing tiers, free tier/trial limits, company size/valuation, and functional highlights.
-   * For open-source repos: Include official GitHub star badge (`style=social&color=white`), license, primary domain, and PQC capabilities.
+   * For open-source repos: Include official GitHub Stars_Badge (`style=social&color=white`), license, primary domain, and PQC capabilities.
 4. 🚀 **Commit and push** your branch.
 5. 📬 **Open a Pull Request** describing your changes and verification details.
 
